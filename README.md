@@ -1,2 +1,0 @@
-# LM_CODIGO
-LM
