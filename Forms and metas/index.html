@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+
+    <meta http-equiv="Refresh" content="3">
+
+    <meta http-equiv="Expires" content="0">
+
+    <meta name="language" content="en">
+    <meta name="Copyright" content="Mateo">
+    <meta name="author" content="Mateo">
+    <meta name="revised" content="Mateo">
+    <meta name="summary" content="clothing">
+
+</head>
+
+<body>
+
+    <h2>FORM</h2>
+    <form action="registro.php" method="get">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="Name">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="Name" id="Name"  placeholder="Name" autofocus
+                        size="30" maxlength="10" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Adress">
+                        Surname 
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="Surname" id="Surname" required placeholder="Surname">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Age">Age </label></td>
+                <td><input type="number" name="Age" id="Age" maxlength="5" max="10" min="0" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Adress">
+                        Adress
+                    </label>
+                </td>
+                <td>
+                    <input type="text" name="Adress" id="Adress" required placeholder="Adress">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="town">Town</label></td>
+                <td>
+                    <select name="town" id="town">
+                        <option value="-1">town</option>
+                        <option value="41">Sevilla</option>
+                        <option value="39">Malaga</option>
+                        <option value="27">Jaen</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td>
+                    <select name="phone" id="phone">
+                        <option value="977">977</option>
+                        <option value="+34">+34 95</option>
+                        <option value="677">951</option>
+                        <option value="345">958</option>
+                    </select>
+                    <input type="tel" name="telefono" id="telefono" placeholder="98499***" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pregunta"> Have you ever<br> worked</label>
+
+                </td>
+                <td>
+                    <input type="radio" name="pregunta" id="pregunta" value="Yes" checked><span>Yes</span>
+                    <input type="radio" name="pregunta" id="pregunta" value="No"><span>No</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fechas">When was the <br>last time you worked</label></td>
+                <td>
+                    <input type="date" name="fecha1" id="fecha1">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="aficiones">Social Network</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Whatsapp" id="Whatsapp" value="D" checked><span>Whatsapp</span>
+                    <input type="checkbox" name="Instagram" id="Instagram" value="C"><span>Instagram</span>
+                    <input type="checkbox" name="Facebook" id="Facebook" value="V"><span><span></span>Twitter</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Own description ">Own description </label></td>
+                <td>
+                    <textarea name="Own description " id="Own description " rows="10" cols="50"
+                        placeholder="Own description "></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" name="email" id="email" required>
+                </td>
+            </tr>          
+            <tr>
+                <td><input type="reset"></td>
+                <td> <input type="submit" value="enviar usuario"></td>
+                <td><input type="button" name="boton" id="boton" value="ocultar"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html> 
