@@ -1,0 +1,172 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font: 25px sans-serif;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font: xx-small;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header, section, footer, aside, nav, article {
+  display: block;
+}
+
+#header {
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+#cabecerapagina {
+  color: brown;
+}
+
+#container {
+  width: 1250px;
+  margin: 15px auto;
+  text-align: left;
+}
+
+#footercabecera {
+  color: gray;
+}
+
+#fotocara{
+  padding: 25px;
+}
+
+#cabecera {
+  text-align: left;
+  float: left;
+}
+
+#menu {
+  background: lightskyblue;
+  padding: 2px;
+  border: solid 1px gray;
+}
+
+#menu li {
+  display: inline-block;
+  list-style: none;
+  padding: 7px;
+}
+
+#main {
+  background: navajowhite;
+  padding: 15px;
+  float: left;
+  width: auto;
+}
+
+#cuerpo {
+  background: rgba(221, 134, 87, 0.659);
+  width: 764px;
+}
+
+#menumain {
+  background: rgba(221, 147, 106, 0.659);
+  padding: 5px;
+  border: solid 1px rgba(151, 101, 74, 0.659);
+}
+
+#cabeceramain {
+  font-weight: bold;
+  font-size: 35px;
+  color: darkcyan;
+  padding-top: 20px;
+}
+
+#imagencentro {
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 20 px;
+}
+
+#parteescrita {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: rgba(114, 56, 24, 0.659);
+}
+
+#footercuerpo {
+  color: rgba(114, 56, 24, 0.659);
+  padding: 10px;
+  background: rgba(211, 143, 106, 0.385);
+}
+
+#seguridad {
+  color: darkcyan;
+}
+
+aside {
+  float: left;
+}
+
+#headaside {
+  padding-left: 0px;
+  border: solid rgb(70, 70, 70) 1px;
+  color: rgb(70, 70, 70);
+  padding: 3px;
+}
+
+#listaiconos {
+  border: solid 1px;
+}
+
+#column {
+  float: left;
+  width: 243px;
+  background: rgb(174, 174, 174);
+  border: gray 2px solid;
+}
+
+#column li {
+  display: inline-block;
+  list-style: none;
+  padding: 5px;
+}
+
+#curso {
+  border: solid rgb(70, 70, 70) 1px;
+  color: rgb(70, 70, 70);
+  padding: 3px;
+}
+
+#imghtml5 {
+  align-self: center;
+  border: solid rgb(70, 70, 70) 2px;
+}
+
+#categorias {
+  border: solid rgb(70, 70, 70) 1px;
+  color: rgb(70, 70, 70);
+  padding: 3px;
+}
+
+#listacategorias li {
+  display: block;
+  list-style: georgian;
+  padding: 5px;
+}
+
+#listacategorias span {
+  color: darkcyan;
+}
