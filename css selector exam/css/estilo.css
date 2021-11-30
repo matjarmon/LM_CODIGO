@@ -1,0 +1,31 @@
+h1{
+    color:  green;
+}
+
+h2{
+    color: green;
+}
+
+#tconf {
+    color: hotpink;
+    background-color: lightsalmon;
+}
+
+div b {
+    border: solid 5 px blue;
+}
+#primeracapa:hover .segunda {
+    display:none;
+}
+
+div#primeracapa :first-child {
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div a {
+    color: goldenrod;
+} 
