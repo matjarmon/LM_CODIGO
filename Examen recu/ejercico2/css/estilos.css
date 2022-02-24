@@ -1,0 +1,26 @@
+.h1 {
+    color: blue;
+}
+.h2 {
+    color: blue;
+}
+.h3 {
+    color: blue;
+}
+
+#textoconfondo {
+    background: rgb(255, 226, 59);
+    color: blue;
+}
+
+.principal .snegrita span{
+    letter-spacing: 2px;
+}
+
+.segundo::selection {
+    background: orange;
+}
+
+.segundo::first-letter {
+    font-size: xx-small;
+}
