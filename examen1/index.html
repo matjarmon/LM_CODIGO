@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <h1>2 Ejercicio</h1>
+    <div>
+        <p id="opcion1">1</p>
+        <p id="opcion2">2</p>
+        <p id="opcion3">3</p>
+        <input type="button" id="cambiar" value="cambiar" onclick="cambiar()">
+    </div>
+
+    <h2>3 ejercicio</h2>
+        <div>
+            <label for="">1</label>
+           <input type="text" name="" id="" autofocus>
+            <br><br>
+            <label for="">2</label>
+            <input type="number" name="" id="">
+            <br><br>
+        
+            <input type="button" id="calcular" value="Calcular" onclick="calcular()">
+            <br><br>
+            <span id="resultado"> </span>    
+        </div>
+
+
+        <br>
+        
+        <h1>Formulario</h1>
+        <div style="width: 50%; float: left;">
+            <form action="funciones.php" method="get" name="formu" onsubmit=" return validarFormulario()">
+                <label for="texto">Nombre y apellidos</label>
+                <input type="text" name="texto" id="texto" 
+                        placeholder="texto" autofocus onblur="validar(this)">
+                <br/>
+
+               <label for="texto">email</label>
+                <input type="text" name="texto" id="texto" 
+                        placeholder="@iestriana.com" autofocus onblur="validar(this)">
+                <br/>
+
+                <span id="spnombre" style="color: red;"></span>
+                <br/>
+
+                <label for="Edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="1" max="100" onchange="mostrarEdad(this)">
+                <span id="spedad"></span>       
+                <br><br>
+
+                <label for="web">web</label>
+                <input type="text" name="web" id="web" 
+                        placeholder="https://" autofocus onblur="validar(this)">
+                <br/>
+
+                <span id="spnombre" style="color: red;"></span>
+                  
+                <br/>
+                <input type="submit" value="Enviar">
+    
+            </form>
+        </div>
+        <div id="capaerrores" style="width: 50%; float: left;color: red;visibility: hidden;">
+            <h3>Errores</h3>
+            <span id="sperrores"></span>
+        </div>
+
+        
+    
+</body>
+</html>
