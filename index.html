@@ -1,81 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen jquery</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <script>  
+    'use strict'  
+        $(function(){  
+         $("#boton").click( function() {  
+          var ps=$('p');  
+          console.log(ps);  
+          console.log("Longitud del 1er párrafo: "+ps.eq(0).html().length);  
+          $.each(ps, function(i,valor){  
+           console.log(i+": "+valor.firstChild.length);  
+           var largo=valor.firstChild.length;  
+           if(largo>100){  
+            valor.style.backgroundColor='yellow';  
+           }  
+          });  
+         });  
+        });  
+</script>
+<h1>Hola Holala Hola Hola Hola</h1>  
+<h3>Hola Holala Hola Hola HolaHola Holala Hola Hola Hola</h3>  
+<h5>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</h5>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola </p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola </p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola HolaHola Hola</p>  
+<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Hola</p>  
+<input type="button" id="boton" value="Párrafos largos">  
+<input type="button" id="unboton" value="Párrafos quitar">  
+
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+
+
+    <script> 
+    <style type="text/css">
+    A:hover {
+            backgroundColor="red" 
+            }
+    </style>
+        
+    $(".fondo td").mousedown(function () {
+        $(this).addClass("estilo4");
+      });
     
-   <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+      $(".fondo td").mouseup(function () {
+        $(this).removeClass("estilo4");
+      });
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     
+      </script>
+      
+    <table class="fondo">
+        <tr>
+          <td style="border: 2px solid black; border-collapse: collapse">MATEO</td>
+          <td style="border: 2px solid black; border-collapse: collapse">JARA MONTERO</td>
+        </tr>
+      </table>
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <style type="text/css">
+        A:hover {
+            text-decoration: none; 
+            color:red; 
+            }
+        </style>
+      <div>
+          <a href="www.google.es" font color="blue" >GOOGLE</a>
+      </div>
 
-    <title>Pagina Web Mateo Jara Montero 1º de ASIR</title>
-  </head>
-  <body>
- 
-        
-        <div class="row bg-dark justify-content-center mt-3 mb-3">
-          <h1 class="text-uppercase text-white text-align"><i>ESTE ES MI BLOG</i></h1>
-          <h2 class="text-uppercase text-white text-align"><i>PERSONAL</i></h2>
-          <h3 class="text-white text-align"><small>Dentro de este blog podras encontrar todo lo que pienso
-               sobre muchos temas y noticias de la actualidad</small>
-            </h3>
-          <h4><a href="#" class="card-link">Continuar leyendo...</a></h4>
-
-        </div>
-
-        <div class="row">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="imagenes/negro.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                    <p class="card-text"><small class="text-muted">Mundo</small></p>                  <h5 class="card-title">Apple mundial</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">13 dic</h6>
-                  <p class="card-text">TEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTO</p>
-                  <a href="#" class="card-link">Continuar leyendo...</a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-         <br>
-
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="imagenes/negro.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                    <p class="card-text"><small class="text-muted">Mundo</small></p>                  <h5 class="card-title">Apple mundial</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">13 dic</h6>
-                  <p class="card-text">TEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTOTEXTO</p>
-                  <a href="#" class="card-link">Continuar leyendo...</a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          </div>
-
-
-        
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+</div>    
+       
+</body>
 </html>
+
