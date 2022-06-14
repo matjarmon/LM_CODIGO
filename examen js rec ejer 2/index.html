@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02 Examen JS</title>
+    <script type="text/javascript" src="js/funciones02.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos02.css">
+</head>
+<body>
+    <p>
+        <a href="#" id="primero">Primer enlace</a><br>
+        <a href="#" id="segundo">Segundo enlace</a><br>
+        <a href="#" id="tercero">Tercer enlace</a><br>
+    </p>
+    <input type="button" value="modificar" onclick="cambiar()">
+
+    <br>
+    <br>
+    <br>
+    
+    <table>
+        <tr>
+            <td>
+                <label for="viaje">Viajar a: </label>
+            </td>
+            <td>
+                <input type="text" name="viaje" id="viaje">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="kms">Kilometros: </label>
+            </td>
+            <td>
+                <input type="number" name="kms" id="kms">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gasolina">Precio gasolina/Km: </label>
+            </td>
+            <td>
+                <input type="number" name="gasolina" id="gasolina">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="calcular" onclick="calcular()">
+            </td>
+        </tr>
+    </table>
+    <div>
+        <span id="resultado"></span>
+    </div>
+
+   
+
+</body>
+</html>
