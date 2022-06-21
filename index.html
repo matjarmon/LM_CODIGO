@@ -1,107 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen jquery</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/funciones.js"></script>
-</head>
-<body>
-    <script>  
-    'use strict'  
-        $(function(){  
-         $("#boton").click( function() {  
-          var ps=$('p');  
-          console.log(ps);  
-          console.log("Longitud del 1er párrafo: "+ps.eq(0).html().length);  
-          $.each(ps, function(i,valor){  
-           console.log(i+": "+valor.firstChild.length);  
-           var largo=valor.firstChild.length;  
-           if(largo>100){  
-            valor.style.backgroundColor='yellow';  
-           }  
-          });  
-         });  
-        });  
-</script>
-<h1>Hola Holala Hola Hola Hola</h1>  
-<h3>Hola Holala Hola Hola HolaHola Holala Hola Hola Hola</h3>  
-<h5>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</h5>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola </p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola </p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala </p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola HolaHola Hola</p>  
-<p>Hola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Holala Hola Hola HolaHola Hola</p>  
-<input type="button" id="boton" value="Párrafos largos">  
-<input type="button" id="unboton" value="Párrafos quitar">  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mateo Jara Montero</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<br>
-<br>
-<br>
-<br>
-<br><br>
-<br>
-<br>
-
-
-    <script> 
-    <style type="text/css">
-    A:hover {
-            backgroundColor="red" 
-            }
-    </style>
-        
-    $(".fondo td").mousedown(function () {
-        $(this).addClass("estilo4");
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+   
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("button#oculto").click(function () {
+        $("#capaBD").toggleClass("ocultarmostrar");
       });
-    
-      $(".fondo td").mouseup(function () {
-        $(this).removeClass("estilo4");
-      });
+    });
+  </script>
 
-     
-      </script>
+  <style>
+    .ocultarmostrar {
+      display: none;
+    }
+
+    .about {
+      cursor: pointer;
+      background-color: pink;
+      color: #FFFFFF;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+
+    .about h1 {
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    .about h2 {
+      opacity: .8;
+    }
+
+    .about span {
+      display: block;
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      margin: auto;
+      border-radius: 50%;
+      font-size: 40px;
+      color: #ffffff;
+      opacity: 0.7;
+      background-color: #0026ff;
+      border: 2px solid #0026ff;
       
-    <table class="fondo">
-        <tr>
-          <td style="border: 2px solid black; border-collapse: collapse">MATEO</td>
-          <td style="border: 2px solid black; border-collapse: collapse">JARA MONTERO</td>
-        </tr>
-      </table>
+     
+    }
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-        <style type="text/css">
-        A:hover {
-            text-decoration: none; 
-            color:red; 
-            }
-        </style>
-      <div>
-          <a href="www.google.es" font color="blue" >GOOGLE</a>
+    .about-item:hover span {
+      opacity: 1;
+      border: 2px solid #0026ff;
+      font-size: 42px;
+      -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+      -moz-transform: scale(1.1, 1.1) rotate(360deg);
+      -o-transform: scale(1.1, 1.1) rotate(360deg);
+      transform: scale(1.1, 1.1) rotate(360deg);
+    }
+
+    .about-item:hover h2 {
+      opacity: 1;
+      -webkit-transform: scale(1.1, 1.1);
+      -moz-transform: scale(1.1, 1.1);
+      -o-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1);
+    }
+
+    .about .lead {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <section class="text-center about">
+      <h1>PHP</h1>
+      <br><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-group"></span>
+            <h2><a href="insertar.php" style="text-decoration: none" class="text-danger">Insertar Información</a></h2>
+            <p class="lead">Aquí podrás insertar nueva información en la base de datos sobre animales.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-info"></span>
+            <h2><a href="consultar.php" style="text-decoration: none" class="text-danger">Listar Todos los datos</a></h2>
+            <p class="lead">Esta opción muestra toda la informacion de la base de datos.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+            <span class="fa fa-file"></span>
+            <h2><a href="#" style="text-decoration: none" class="text-danger">Consultar datos</a></h2>
+            <p class="lead">Consultar los datos que le interesen de la base de datos.</p>
+          </div>
+
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+
+        <button type="submit" class="btn btn-success" id="oculto">Esquema base de datos</button>
+        <br>
+        <div id="capaBD" class="ocultarmostrar">
+          <br>
+          <img src="image/R.png" id="foto" >
+        </div>
+        
+
+        <br>
       </div>
+    </section>
+  </div>
 
-</div>    
-       
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
